@@ -1,40 +1,101 @@
-/* this stylesheet is primarily for grid and structure, please put other css stylings in setup.css */ 
+/* this stylesheet is primarily for structure, please put other css styles in setup.css */ 
 
-/* high fidelity section = grid1 */ 
-  .grid1 {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    grid-gap: 5rem;
+
+/* styles for the hero*/
+.hero {
+  background-color: beige;
+  padding: 4rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  align-items: center;
+  height: 100vh;
+}
+
+.hero > h1 {
+  font-size: 4rem;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.hero > article > p {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+
+/* hi-fidelity styles */
+.hi {
+  padding: 2rem;
+}
+
+.hi > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 1rem;
+  
+}
+
+.hi > ul > li {
+    background-color: whitesmoke;
+}
+
+.hi > ul > li:nth-child(2) {
+    background-color: beige;
+}
+
+.hi > ul > li:nth-child(5) {
+    background-color: beige;
+}
+
+
+/*mid-fidelity styles */
+.mid {
+    padding: 2rem;
   }
   
-  .grid1 > div {
-    background: #EDE7F6;
-    padding: 1.5rem;
-    border-radius: 1rem;
-  }
-
-/* mid fidelity section = grid2 */ 
-  .grid2 {
+  .mid > ul {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    grid-gap: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
   }
   
-  .grid2 > div {
-    background: #EDE7F6;
-    padding: 1.5rem;
-    border-radius: 1rem;
-  }
-
-/* mid fidelity section = grid3 */ 
-  .grid3 {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    grid-gap: 5rem;
+  .mid > ul > li {
+      background-color: whitesmoke;
   }
   
-  .grid3 > div {
-    background: #EDE7F6;
-    padding: 1.5rem;
-    border-radius: 1rem;
+  .mid > ul > li:nth-child(2) {
+      background-color: beige;
   }
+
+  .mid > ul > li:nth-child(7) {
+    background-color: beige;
+}
+
+
+  /*low-fidelity styles */
+.low {
+    padding: 2rem;
+  }
+  
+  .low > ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+  }
+  
+  .low > ul > li {
+      background-color: whitesmoke;
+  }
+  
+  .low > ul > li:nth-child(1) {
+      background-color: beige;
+  }
+
+  .low > ul > li:nth-child(6) {
+    background-color: beige;
+}
+
+.low > ul > li:nth-child(12) {
+    background-color: beige;
+}
+  

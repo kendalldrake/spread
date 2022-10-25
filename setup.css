@@ -1,17 +1,20 @@
-/* this stylesheet is for styling, not related to grid and structure of website */ 
+/* generic stylings separate from grid */
+:root {
+    background: white;
+  }
 
-body {
-	font-family: sans-serif;
-	padding: 0px;
-}
+h1, h2, h3, h4, h5, h6 {
+    font-family: sans-serif;
+  }
+  
+  p, a {
+    font-family: sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
 
-section {
-	background-color: gold;
-}
-
-div {
-	background-color: tomato;
-	border-bottom: 2px solid firebrick;
-	border-right: 2px solid firebrick;
-	padding: 5px;
-}
+  
+  
+  
