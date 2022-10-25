@@ -1,4 +1,10 @@
 /* generic stylings separate from grid */
+@media print {
+    p {
+        font-size: 11pt;
+    }
+}
+
 :root {
     background: white;
   }
@@ -15,6 +21,6 @@ h1, h2, h3, h4, h5, h6 {
     scroll-behavior: smooth;
   }
 
-  
+
   
   

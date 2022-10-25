@@ -6,7 +6,7 @@
   background-color: beige;
   padding: 4rem 2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   align-items: center;
   height: 100vh;
 }
@@ -30,13 +30,16 @@
 
 .hi > ul {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
   grid-gap: 1rem;
+  
   
 }
 
 .hi > ul > li {
     background-color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .hi > ul > li:nth-child(2) {
