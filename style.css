@@ -9,7 +9,7 @@
 :root {
     --hifi-bg: #fff; 
     --hifi-text: #000;
-    --low-bg:#00249c; 
+    --low-bg:darkblue; 
   }
 
 h1, h2, h3, h4, h5, h6 {
