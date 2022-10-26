@@ -1,53 +1,74 @@
-/* this stylesheet is primarily for structure, please put other css styles in setup.css */ 
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@media print {
+    p {
+        font-size: 11pt;
+    }
+}
 
-/* styles for the hero*/
+@media only screen and (max-width: 600px) {
+
+}
+
+:root {
+    
+  }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: sans-serif;
+  }
+  
+  p, a {
+    font-family: sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
 .hero {
-  background-color: beige;
-  padding: 4rem 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  align-items: center;
+  background-color: white;
+  padding: 10vw;
   height: 100vh;
 }
 
 .hero > h1 {
-  font-size: 4rem;
-  padding-bottom: 1rem;
-  text-transform: uppercase;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 500;
+  font-size: 20vh;
+  text-transform: none;
 }
 
-.hero > article > p {
-  font-size: 1.5rem;
-  font-weight: 200;
+.hero > h2 {
+font-family: 'Public Sans', sans-serif;
+font-weight: 500;
+font-size: 5vh;
+padding-top: 20vh;
+padding-bottom: 0;
+text-transform: none;
 }
 
 
 /* hi-fidelity styles */
 .hi {
-  padding: 2rem;
+  padding: 10rem;
 }
 
 .hi > ul {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(200px, 1fr));
-  grid-gap: 1rem;
-  
-  
+    padding: 2vw;
 }
 
 .hi > ul > li {
-    background-color: whitesmoke;
-    display: flex;
-    flex-wrap: wrap;
+    background-color: white;
+
 }
 
 .hi > ul > li:nth-child(2) {
-    background-color: beige;
+    background-color: white;
 }
 
 .hi > ul > li:nth-child(5) {
-    background-color: beige;
+    background-color: white;
 }
 
 
