@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=IBM+Plex+Mono:wght@300&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @media print {
     p {
@@ -6,20 +6,14 @@
     }
 }
 
-@media only screen and (max-width: 600px) {
-
-}
-
 :root {
-    
+    --hifi-bg: #fff; 
+    --hifi-text: #000;
+    --low-bg: darkblue; 
   }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: sans-serif;
-  }
-  
-  p, a {
-    font-family: sans-serif;
+    font-family: 'Public Sans', sans-serif;
   }
   
   html {
@@ -28,21 +22,21 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero {
   background-color: white;
-  padding: 10vw;
+  padding: 5vw;
   height: 100vh;
 }
 
 .hero > h1 {
   font-family: 'Public Sans', sans-serif;
   font-weight: 500;
-  font-size: 20vh;
+  font-size: 10vw;
   text-transform: none;
 }
 
 .hero > h2 {
 font-family: 'Public Sans', sans-serif;
 font-weight: 500;
-font-size: 5vh;
+font-size: 5vw;
 padding-top: 20vh;
 padding-bottom: 0;
 text-transform: none;
@@ -51,75 +45,140 @@ text-transform: none;
 
 /* hi-fidelity styles */
 .hi {
-  padding: 10rem;
+    padding: 10vw;
+    background-color: var(--hifi-bg);
+    
 }
 
 .hi > ul {
-    padding: 2vw;
+    padding: none;
 }
 
 .hi > ul > li {
-    background-color: white;
-
+    color: var(--hifi-text);
+    font-family: 'EB Garamond', serif;
+    font-size: 1.5vw;
+    font-weight: 200;
+    line-height: 2.2vw;
+    padding-right: 30vw;
+    padding-bottom: 1vw;
+    text-align: justify;
+    
 }
 
-.hi > ul > li:nth-child(2) {
-    background-color: white;
-}
-
-.hi > ul > li:nth-child(5) {
-    background-color: white;
-}
-
+/*first paragraph dropcap styles */
+.hi > ul > li > .dropcap:first-child:first-letter {
+    float: left;
+    font-family: 'EB Garamond', serif;
+    font-size: 5vw;
+    line-height: 2vw;
+    padding-top: 1vw;
+    padding-right: 1vw;
+    padding-left: 0vw;
+  }
 
 /*mid-fidelity styles */
 .mid {
-    padding: 2rem;
+    padding: 5vw;
+    background-color: beige;
+    background: repeating-linear-gradient(beige, beige 25px, #9198e5 26px, #9198e5 27px);
   }
   
   .mid > ul {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     grid-gap: 1rem;
   }
   
-  .mid > ul > li {
-      background-color: whitesmoke;
-  }
-  
-  .mid > ul > li:nth-child(2) {
-      background-color: beige;
+  .mid > ul > li:nth-child(1) {
+    background-color:white;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 1.3vw;
+    font-weight: 200;
+    line-height: 1.8w;
+    padding: 5vw;
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+    -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
   }
 
-  .mid > ul > li:nth-child(7) {
-    background-color: beige;
+  .mid > ul > li:nth-child(4) {
+    background-color:white;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 1.3vw;
+    font-weight: 200;
+    line-height: 1.8vw;
+    padding: 5vw;
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+    -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  }
+
+.pantonecontainer {
+    width: 40%;
+    height: 60%;
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+    -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+    transform: rotate(20deg);
+}
+.pantonecolor {
+    background-color: tomato;
+    height: 70%;
+}
+ 
+.pantonetext {
+    background-color: white;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.6vw;
+    padding: 4%;
+    height: 30%;
+}
+
+.pantonetext > p {
+    font-size: 1.4vw;
+    font-weight: 400;
 }
 
 
   /*low-fidelity styles */
 .low {
-    padding: 2rem;
+    background-color: var(--low-bg);
+    padding: 2vw;
   }
   
   .low > ul {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(3, 1fr);
+    grid-gap: 2vw;
   }
   
   .low > ul > li {
-      background-color: whitesmoke;
+      font-family: 'IBM Plex Mono', monospace;
+      color: white;
+      font-size: 1.2vw;
+      line-height: 1.8vw;
   }
   
   .low > ul > li:nth-child(1) {
-      background-color: beige;
+    grid-area: 1 / 1 / 2 / 3;
+    border: 1px white solid;
+    padding: 2vw;
   }
 
   .low > ul > li:nth-child(6) {
-    background-color: beige;
-}
+    grid-area: 2 / 3 / 3 / 5;
+    border: 1px white solid;
+    padding: 2vw;
+  }
 
-.low > ul > li:nth-child(12) {
-    background-color: beige;
-}
+  .low > ul > li:nth-child(8) {
+    grid-area: 3 / 2 / 4 / 4; 
+    border: 1px white solid;
+    padding: 2vw;
+  }
+
   
+
+@media only screen and (max-width: 600px) {
+
+}
