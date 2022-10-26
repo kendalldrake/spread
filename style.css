@@ -9,7 +9,7 @@
 :root {
     --hifi-bg: #fff; 
     --hifi-text: #000;
-    --low-bg: darkblue; 
+    --low-bg:#00249c; 
   }
 
 h1, h2, h3, h4, h5, h6 {
@@ -120,7 +120,7 @@ text-transform: none;
     transform: rotate(20deg);
 }
 .pantonecolor {
-    background-color: tomato;
+    background-color: var(--low-bg);
     height: 70%;
 }
  
@@ -142,7 +142,7 @@ text-transform: none;
   /*low-fidelity styles */
 .low {
     background-color: var(--low-bg);
-    padding: 2vw;
+    padding: 5vw;
   }
   
   .low > ul {
@@ -157,24 +157,27 @@ grid-template-rows: repeat(3, 1fr);
       color: white;
       font-size: 1.2vw;
       line-height: 1.8vw;
+      border: 1px white dashed;
   }
   
   .low > ul > li:nth-child(1) {
     grid-area: 1 / 1 / 2 / 3;
     border: 1px white solid;
-    padding: 2vw;
+    border-style: double;
+    padding: 5vw;
   }
 
   .low > ul > li:nth-child(6) {
     grid-area: 2 / 3 / 3 / 5;
     border: 1px white solid;
-    padding: 2vw;
+    padding: 5vw;
   }
 
   .low > ul > li:nth-child(8) {
     grid-area: 3 / 2 / 4 / 4; 
     border: 1px white solid;
-    padding: 2vw;
+    padding: 5vw;
+
   }
 
   
