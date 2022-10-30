@@ -356,6 +356,8 @@ grid-template-rows: repeat(3, 1fr);
 .low {
     background-color: var(--low-bg);
     padding: 2vw;
+    padding-top: 10vw;
+  padding-bottom: 10vw;
   }
   
   .low > ul {
