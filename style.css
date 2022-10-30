@@ -4,16 +4,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&family=WindSong&display=swap');
 
-@media print {
-    p {
-        font-size: 11pt;
-    }
-}
-
 :root {
     --hifi-bg: #fff; 
     --hifi-text: #000;
-    --low-bg:#004EEB; 
+    --low-bg:#004EEB;
+    --mid-text:'Public Sans', sans-serif;
   }
 
 h1, h2, h3, h4, h5, h6 {
@@ -47,6 +42,14 @@ padding-bottom: 40vh;
 text-transform: none;
 }
 
+.feeling > h1 {
+  font-family: 'Mrs Saint Delafield', cursive;
+  font-size: 1500%; 
+  letter-spacing: 0.5vw; 
+  color: #004EEB; 
+  line-height: 15px;
+  padding-left: 46%;
+}
 
 /* hi-fidelity styles */
 .hi {
@@ -97,7 +100,7 @@ text-transform: none;
   
   .mid > ul > li:nth-child(1) {
     background-color:#FAFAF9;
-    font-family: 'Public Sans', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 1.2vw;
     font-weight: 100;
     line-height: 1.8vw;
@@ -108,7 +111,7 @@ text-transform: none;
 
   .mid > ul > li:nth-child(4) {
     background-color:#D1E0FF;
-    font-family: 'Public Sans', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 1.2vw;
     font-weight: 100;
     line-height: 1.8vw;
@@ -185,8 +188,206 @@ grid-template-rows: repeat(3, 1fr);
 
   }
 
-  
+ 
+@media print {
+  p {
+      font-size: 11pt;
+  }
+} 
 
 @media only screen and (max-width: 600px) {
+  .hero {
+    padding: 5vw;
+    padding-top: 0vh;
+    height: 100vh;
+  }
+
+  .hero > h1 {
+    font-family:'EB Garamond', serif;
+    font-weight: 300;
+    font-size: 20vw;
+  }
+
+  .feeling > h1 {
+    font-size: 36vw; 
+    letter-spacing: 0.5vw; 
+    color: var(--low-bg); 
+    line-height: 32vw;
+    padding-left: 0;
+  }
+  
+  .hero > h2 {
+  font-family: 'EB Garamond', serif;
+  font-weight: 500;
+  font-size: 8vw;
+  padding-bottom: 0;
+  }
+
+  /* hi-fidelity styles */
+.hi {
+  padding: 5vw;
+  background-color: var(--hifi-bg);
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+  
+}
+
+.hi > ul {
+  padding: none;
+}
+
+.hi > ul > li {
+  color: var(--hifi-text);
+  font-family: 'EB Garamond', serif;
+  font-size: 5vw;
+  font-weight: 200;
+  line-height: 8vw;
+  padding-right: 10vw;
+  padding-bottom: 1vw;
+  text-align: left;
+  
+}
+
+/*first paragraph dropcap styles */
+.hi > ul > li > .dropcap:first-child:first-letter {
+  float: left;
+  font-family: 'EB Garamond', serif;
+  font-size: 18vw;
+  line-height: 8vw;
+  padding-top: 5vw;
+  padding-right: 1vw;
+  padding-left: 0vw;
+}
+  /*mid-fidelity styles */
+.mid {
+  padding: 5vw;
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+  background-color: #F5FBFF;
+  background: repeating-linear-gradient(#F5FBFF, #F5FBFF 25px, #9198e5 26px, #9198e5 27px);
+}
+
+.mid > ul {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1rem;
+}
+
+.mid > ul > li:nth-child(1) {
+  background-color:#FAFAF9;
+  font-family: var(--mid-text);
+  font-size: 5vw;
+  font-weight: 300;
+  line-height: 8vw;
+  padding: 5vw;
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+}
+
+.mid > ul > li:nth-child(4) {
+  background-color:#FAFAF9;
+  font-family: var(--mid-text);
+  font-size: 5vw;
+  font-weight: 300;
+  line-height: 8vw;
+  padding: 5vw;
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+}
+
+.pantonecontainer {
+  width: 50vw;
+  height: 80vw;
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  transform: rotate(20deg);
+}
+.pantonecolor {
+  background-color: var(--low-bg);
+  height: 70%;
+}
+
+.pantonetext {
+  background-color: white;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 500;
+  font-size: 8vw;
+  padding: 4%;
+  height: 30%;
+}
+
+.pantonetext > p {
+  font-size: 5vw;
+  font-weight: 400;
+}
+.quotepaper1 {
+  font-family: var(--mid-text);
+  font-size: 8vw;
+  letter-spacing: 0vw;
+  font-weight: 500;
+  text-align: left;
+  background-color: white;
+  overflow: hidden;
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  transform: rotate(10deg);
+  padding: 3vw;
+  margin-right: 20vw;
+}
+
+.quotepaper2 {
+  float: right;
+  font-family: var(--mid-text);
+  font-size: 8vw;
+  letter-spacing: 0vw;
+  font-weight: 500;
+  text-align: left;
+  background-color: white;
+  overflow: hidden;
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  transform: rotate(-10deg);
+  padding: 3vw;
+  margin-right: 20vw;
+
+}
+
+  /*low-fidelity styles */
+.low {
+    background-color: var(--low-bg);
+    padding: 2vw;
+  }
+  
+  .low > ul {
+  display: block;
+  padding: 0;
+  }
+  
+  .low > ul > li {
+      font-family: 'IBM Plex Mono', monospace;
+      color: white;
+      font-size: 5vw;
+      line-height: 8vw;
+      border: 1px white dashed;
+      padding: 0vw;
+      margin: 3vw;
+  }
+  
+  .low > ul > li:nth-child(1) {
+
+    border: 1px white solid;
+    border-style: double;
+    padding: 5vw;
+  }
+
+  .low > ul > li:nth-child(6) {
+
+    border: 1px white solid;
+    padding: 5vw;
+  }
+
+  .low > ul > li:nth-child(8) {
+    border: 1px white solid;
+    padding: 5vw;
 
 }
