@@ -35,6 +35,8 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: none;
 }
 
+
+
 .hero > h2 {
 font-family: 'EB Garamond', serif;
 font-weight: 500;
@@ -51,6 +53,12 @@ text-transform: none;
   color: #004EEB; 
   line-height: 15px;
   padding-left: 46%;
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 /* hi-fidelity styles */
@@ -297,7 +305,8 @@ grid-template-rows: repeat(3, 1fr);
     letter-spacing: 0.5vw; 
     color: var(--low-bg); 
     line-height: 32vw;
-    padding-left: 0;
+    padding-left: 5%;
+    padding-top: 0;
   }
   
   .hero > h2 {
