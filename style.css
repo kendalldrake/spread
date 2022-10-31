@@ -570,6 +570,8 @@ text-transform: none;
     padding: 5vw;
 
 }
+}
+
 @media print {
   /* print styles go here */
 }
