@@ -188,7 +188,6 @@ grid-template-rows: repeat(3, 1fr);
 
   }
 
-<<<<<<< HEAD
   section {
     display: flex;
     flex-wrap: wrap;
@@ -199,7 +198,6 @@ grid-template-rows: repeat(3, 1fr);
     .hero, .hi, .mid, .low {
       width: 100%; /* The width is 100%, when the viewport is 600px or smaller */
     }
-=======
  
 @media print {
   p {
@@ -403,7 +401,6 @@ grid-template-rows: repeat(3, 1fr);
   .low > ul > li:nth-child(8) {
     border: 1px white solid;
     padding: 5vw;
->>>>>>> ebaae876be0d3fc9d1402e1fc49de3bcd13edc74
 
 }
 @media print {
