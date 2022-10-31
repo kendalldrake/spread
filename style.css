@@ -328,10 +328,82 @@ text-transform: none;
         text-align: justify;
         
     }
-      .mid {
-        font-size:12pt;
-        padding-top: 5%;
+
+    .mid {
+      padding: 1vw;
+      padding-top: 10%;
+      padding-bottom: 10%;
+      background-color: #F5FBFF;
+      background: repeating-linear-gradient(#F5FBFF, #F5FBFF 25px, #9198e5 26px, #9198e5 27px);
+    }
+    
+    .mid > ul {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1rem;
+    }
+
+      .mid > ul > li:nth-child(1) {
+        background-color:#FAFAF9;
+        font-family: var(--mid-text);
+        font-size: 9pt;
+        font-weight: 300;
+        line-height: 12pt;
+        padding: 3vw;
+        -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+        -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
       }
+    
+      .mid > ul > li:nth-child(4) {
+        background-color:#fff;
+        font-family: var(--mid-text);
+        font-size: 9pt;
+        font-weight: 300;
+        line-height: 12pt;
+        padding: 3vw;
+        -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+        -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+      }
+    
+    .pantonecontainer {
+        width: 40%;
+        height: 40%;
+        -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+        -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+        transform: rotate(20deg);
+    }
+    .pantonecolor {
+        background-color: var(--low-bg);
+        height: 70%;
+    }
+     
+    .pantonetext {
+        background-color: white;
+        font-family: var(--mid-text);
+        font-weight: 600;
+        font-size: 12pt;
+        padding: 4%;
+        height: 30%;
+    }
+    
+    .pantonetext > p {
+        font-size: 10pt;
+        font-weight: 400;
+    }
+    
+    .quotepaper1 {
+      font-size: 16pt;
+      text-align: center;
+      margin-right: 70%;
+    }
+    .quotepaper1:after {
+      display: none;
+    }
+    
+    .quotepaper3 {
+      font-size: 16pt;
+      margin-right: 40%;
+    }
         
       .low {
         background-color:white;
@@ -340,11 +412,12 @@ text-transform: none;
         padding-left: 0%;
 
       }
+
       .low > ul > li {
         font-family: 'IBM Plex Mono', monospace;
         color: #004EEB;
         font-size: 10pt;
-        line-height: 13pt;
+        line-height: 12.8pt;
         border: 1px #004EEB dashed;
         padding-bottom: 3%;     
       } 
@@ -354,10 +427,28 @@ text-transform: none;
         border-style: double;
         padding: 1.5vw;}
 
+
+     .low > ul > li:nth-child(2) {
+      font-size: 1.2vw;
+    }
+
+    .low > ul > li:nth-child(3) {
+      font-size: 1.2vw;
+    }
+    .low > ul > li:nth-child(4) {
+      font-size: 1.2vw;
+    }
+    .low > ul > li:nth-child(5) {
+      font-size: 1.2vw;
+    }
+
       .low > ul > li:nth-child(6) {
         grid-area: 2 / 3 / 3 / 5;
         border: 1px #004EEB solid;
         padding: 1.5vw;
+      }
+      .low > ul > li:nth-child(7) {
+        font-size: 1.2vw;
       }
 
       .low > ul > li:nth-child(8) {
@@ -366,6 +457,9 @@ text-transform: none;
         padding: 1.5vw;
         }
         
+        .low > ul > li:nth-child(9) {
+          font-size: 1.2vw;
+        }
       .script{ 
         color: #004EEB;
       }
@@ -563,6 +657,8 @@ text-transform: none;
   transform: rotate(10deg);
 
 }
+
+
   /*low-fidelity styles */
 .low{
     background-color: var(--low-bg);
