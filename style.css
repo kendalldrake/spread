@@ -11,13 +11,15 @@
     --mid-text:'Public Sans', sans-serif;
   }
 
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Public Sans', sans-serif;
   }
   
-  html {
-    scroll-behavior: smooth;
-  }
 
 .hero {
   background-color: white;
@@ -34,8 +36,10 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: none;
 }
 
+
+
 .hero > h2 {
-font-family: 'Public Sans', sans-serif;
+font-family: 'EB Garamond', serif;
 font-weight: 500;
 font-size: 5vw;
 padding-top: 0;
@@ -49,8 +53,13 @@ text-transform: none;
   letter-spacing: 0.5vw; 
   color: #004EEB; 
   line-height: 15px;
-  padding-left: 90%;
-  padding-right:10%;
+  padding-left: 46%;
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 /* hi-fidelity styles */
@@ -90,6 +99,8 @@ text-transform: none;
 /*mid-fidelity styles */
 .mid {
     padding: 5vw;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
     background-color: #F5FBFF;
     background: repeating-linear-gradient(#F5FBFF, #F5FBFF 25px, #9198e5 26px, #9198e5 27px);
   }
@@ -102,7 +113,7 @@ text-transform: none;
   
   .mid > ul > li:nth-child(1) {
     background-color:#FAFAF9;
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: var(--mid-text);
     font-size: 1.2vw;
     font-weight: 100;
     line-height: 1.8vw;
@@ -112,8 +123,8 @@ text-transform: none;
   }
 
   .mid > ul > li:nth-child(4) {
-    background-color:#D1E0FF;
-    font-family: 'IBM Plex Sans', sans-serif;
+    background-color:#fff;
+    font-family: var(--mid-text);
     font-size: 1.2vw;
     font-weight: 100;
     line-height: 1.8vw;
@@ -136,7 +147,7 @@ text-transform: none;
  
 .pantonetext {
     background-color: white;
-    font-family: 'Public Sans', sans-serif;
+    font-family: var(--mid-text);
     font-weight: 600;
     font-size: 1.6vw;
     padding: 4%;
@@ -148,11 +159,75 @@ text-transform: none;
     font-weight: 400;
 }
 
+.quotepaper1 {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.8vw;
+  letter-spacing: 0vw;
+  font-weight: 300;
+  text-align: center;
+  background-color: white;
+  overflow: hidden;
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  transform: rotate(-10deg);
+  padding: 1vw;
+  margin-right: 50%;
+}
 
-  /*low-fidelity styles */
+.quotepaper1:after {
+  content: " QUINTESSENCE";
+  font-family: 'EB Garamond', serif;
+  font-size: 1.8vw;
+  letter-spacing: 0vw;
+  font-weight: 300;
+  text-align: left;
+}
+
+.quotepaper2 {
+ display: none;
+ 
+}
+
+.quotepaper3 {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.8vw;
+  letter-spacing: 0vw;
+  font-weight: 300;
+  text-align: center;
+  background-color: white;
+  overflow: hidden;
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  transform: rotate(-15deg);
+  padding: 1vw;
+  margin-right: 60%;
+  margin-top: 1%;
+}
+
+/* 1st handwritten bullet points silky kitty */
+.midhandwriting1 {
+  font-family: 'Homemade Apple', serif;
+  font-size: 2vw;
+  line-height: 3.2vw;
+  padding-left: 20%;
+
+}
+/* 2nd handwritten bullet points Japanese block print */
+.midhandwriting2 {
+  font-family: 'Homemade Apple', serif;
+  font-size: 2vw;
+  line-height: 3.2vw;
+  padding-left: 30%;
+  margin-top: -50%;
+
+}
+
+  /* low-fidelity styles */
 .low {
     background-color: var(--low-bg);
     padding: 5vw;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
   }
   
   .low > ul {
@@ -194,6 +269,17 @@ text-transform: none;
   padding-right:10%;
 
  }
+  
+  .midhandwriting3 {
+    font-family: 'Homemade Apple', serif;
+    font-size: 1vw;
+    line-height: 3.2vw;
+    padding-left: 30%;
+    margin-top: -50%;
+  
+  }
+
+ 
 @media print {
   body {
         margin: 0;
@@ -258,10 +344,17 @@ text-transform: none;
         
 
 @media only screen and (max-width: 600px) {
+  html, body {
+    overflow-x: hidden;
+  }
+
+  body {
+    position: relative;
+  }
+
   .hero {
     padding: 5vw;
-    padding-top: 0vh;
-    height: 100vh;
+    padding-top: 10vw;
   }
 
   .hero > h1 {
@@ -275,8 +368,8 @@ text-transform: none;
     letter-spacing: 0.5vw; 
     color: var(--low-bg); 
     line-height: 32vw;
-    padding-left: 0;
-    padding-right:10vh;
+    padding-left: 5%;
+    padding-top: 0;
   }
   
   .hero > h2 {
@@ -324,8 +417,8 @@ text-transform: none;
   /*mid-fidelity styles */
 .mid {
   padding: 5vw;
-  padding-top: 10vw;
-  padding-bottom: 10vw;
+  padding-top: 20vw;
+  padding-bottom: 20vw;
   background-color: #F5FBFF;
   background: repeating-linear-gradient(#F5FBFF, #F5FBFF 25px, #9198e5 26px, #9198e5 27px);
 }
@@ -384,41 +477,64 @@ text-transform: none;
   font-weight: 400;
 }
 .quotepaper1 {
-  font-family: var(--mid-text);
-  font-size: 8vw;
+  font-family: 'EB Garamond', serif;
+  font-size: 10vw;
   letter-spacing: 0vw;
-  font-weight: 500;
-  text-align: left;
-  background-color: white;
-  overflow: hidden;
-  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
-  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
-  transform: rotate(10deg);
-  padding: 3vw;
-  margin-right: 20vw;
-}
-
-.quotepaper2 {
-  float: right;
-  font-family: var(--mid-text);
-  font-size: 8vw;
-  letter-spacing: 0vw;
-  font-weight: 500;
-  text-align: left;
+  font-weight: 300;
+  text-align: center;
   background-color: white;
   overflow: hidden;
   -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
   -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
   transform: rotate(-10deg);
-  padding: 3vw;
-  margin-right: 20vw;
-
+  padding: 1vw;
+  margin-right: 50%;
 }
 
+.quotepaper1:after {
+  content: none;
+}
+
+.quotepaper3 {
+  font-family: 'EB Garamond', serif;
+  font-size: 10vw;
+  letter-spacing: 0vw;
+  font-weight: 300;
+  text-align: center;
+  background-color: white;
+  overflow: hidden;
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  transform: rotate(-15deg);
+  padding: 1vw;
+  margin-right: 0%;
+  margin-top: 1%;
+}
+
+/* 1st handwritten bullet points silky kitty */
+.midhandwriting1 {
+  font-family: 'Homemade Apple', serif;
+  font-size: 5vw;
+  line-height: 7vw;
+  padding-left: 20%;
+
+}
+/* 2nd handwritten bullet points Japanese block print */
+.midhandwriting2 {
+  font-family: 'Homemade Apple', serif;
+  font-size: 5vw;
+  line-height: 7vw;
+  padding-left: 10%;
+  margin-top: 5%;
+  transform: rotate(10deg);
+
+}
   /*low-fidelity styles */
-.low {
+.low{
     background-color: var(--low-bg);
     padding: 2vw;
+    padding-top: 20vw;
+  padding-bottom: 20vw;
   }
   
   .low > ul {
@@ -452,4 +568,8 @@ text-transform: none;
   .low > ul > li:nth-child(8) {
     border: 1px white solid;
     padding: 5vw;
+
+}
+@media print {
+  /* print styles go here */
 }
