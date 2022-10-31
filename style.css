@@ -88,6 +88,8 @@ text-transform: none;
 /*mid-fidelity styles */
 .mid {
     padding: 5vw;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
     background-color: #F5FBFF;
     background: repeating-linear-gradient(#F5FBFF, #F5FBFF 25px, #9198e5 26px, #9198e5 27px);
   }
@@ -100,7 +102,7 @@ text-transform: none;
   
   .mid > ul > li:nth-child(1) {
     background-color:#FAFAF9;
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: var(--mid-text);
     font-size: 1.2vw;
     font-weight: 100;
     line-height: 1.8vw;
@@ -110,8 +112,8 @@ text-transform: none;
   }
 
   .mid > ul > li:nth-child(4) {
-    background-color:#D1E0FF;
-    font-family: 'IBM Plex Sans', sans-serif;
+    background-color:#fff;
+    font-family: var(--mid-text);
     font-size: 1.2vw;
     font-weight: 100;
     line-height: 1.8vw;
@@ -134,7 +136,7 @@ text-transform: none;
  
 .pantonetext {
     background-color: white;
-    font-family: 'Public Sans', sans-serif;
+    font-family: var(--mid-text);
     font-weight: 600;
     font-size: 1.6vw;
     padding: 4%;
@@ -146,8 +148,70 @@ text-transform: none;
     font-weight: 400;
 }
 
+.quotepaper1 {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.8vw;
+  letter-spacing: 0vw;
+  font-weight: 300;
+  text-align: center;
+  background-color: white;
+  overflow: hidden;
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  transform: rotate(-10deg);
+  padding: 1vw;
+  margin-right: 50%;
+}
 
-  /*low-fidelity styles */
+.quotepaper1:after {
+  content: " QUINTESSENCE";
+  font-family: 'EB Garamond', serif;
+  font-size: 1.8vw;
+  letter-spacing: 0vw;
+  font-weight: 300;
+  text-align: left;
+}
+
+.quotepaper2 {
+ display: none;
+ 
+}
+
+.quotepaper3 {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.8vw;
+  letter-spacing: 0vw;
+  font-weight: 300;
+  text-align: center;
+  background-color: white;
+  overflow: hidden;
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  transform: rotate(-15deg);
+  padding: 1vw;
+  margin-right: 60%;
+  margin-top: 1%;
+}
+
+/* 1st handwritten bullet points silky kitty */
+.midhandwriting1 {
+  font-family: 'Homemade Apple', serif;
+  font-size: 2vw;
+  line-height: 3.2vw;
+  padding-left: 20%;
+
+}
+/* 2nd handwritten bullet points Japanese block print */
+.midhandwriting2 {
+  font-family: 'Homemade Apple', serif;
+  font-size: 2vw;
+  line-height: 3.2vw;
+  padding-left: 30%;
+  margin-top: -50%;
+
+}
+
+  /* low-fidelity styles */
 .low {
     background-color: var(--low-bg);
     padding: 5vw;
