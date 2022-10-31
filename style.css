@@ -240,6 +240,7 @@ text-transform: none;
       font-size: 1.2vw;
       line-height: 1.8vw;
       border: 1px white dashed;
+      margin: 0%;
   }
   
   .low > ul > li:nth-child(1) {
@@ -280,34 +281,70 @@ text-transform: none;
 @media print {
   body {
         margin: 0;
-        font-size: 14pt;
+        font-size: 12pt;
         background-color: white;
         font-family:'Public Sans', sans-serif;
-        padding: 0.5in;
+        padding: 12mm;
       } 
       .hero {
-        padding: 5vw;
-        padding-left: 20vh;
-        padding-right: 10vh;
-        height: 60vh;
+        padding: 0;
+        padding-left:0;
+        padding-right:0;
+        height: 25vh;
       }
       .hero > h1 {
-        font-size: 15vw;
+        font-size: 60pt;
       }
+      .feeling > h1 {
+        font-family: 'Mrs Saint Delafield', cursive;
+        font-size: 125pt; 
+        letter-spacing: 0.5vw; 
+        color: #004EEB; 
+        line-height: 15px;
+        padding-left: 35%;
+        padding-top: 2%;
+        animation: fadeIn 2s;
+      }
+      .hi {
+        padding:0;
+        padding-top: 5%;
+        padding-bottom: 6%;
+        background-color: var(--hifi-bg);
+        
+    }
+    
+    .hi > ul {
+        padding: none;
+    }
+    
+    .hi > ul > li {
+        color: var(--hifi-text);
+        font-family: 'EB Garamond', serif;
+        font-size: 11pt;
+        font-weight: 200;
+        line-height: 2.2vw;
+        padding-right: 15vw;
+        padding-bottom: 0;
+        text-align: justify;
+        
+    }
       .mid {
-        font-size:14pt;
+        font-size:12pt;
         padding-top: 5%;
       }
         
       .low {
         background-color:white;
-        padding-top: 5%;
+        padding-top: 10%;
+        padding-right: 0%;
+        padding-left: 0%;
+
       }
       .low > ul > li {
         font-family: 'IBM Plex Mono', monospace;
         color: #004EEB;
-        font-size: 14pt;
-        line-height: 2.8vw;
+        font-size: 10pt;
+        line-height: 13pt;
         border: 1px #004EEB dashed;
         padding-bottom: 3%;     
       } 
@@ -315,25 +352,25 @@ text-transform: none;
         grid-area: 1 / 1 / 2 / 3;
         border: 1px #004EEB solid;
         border-style: double;
-        padding: 5vw;}
+        padding: 1.5vw;}
 
       .low > ul > li:nth-child(6) {
         grid-area: 2 / 3 / 3 / 5;
         border: 1px #004EEB solid;
-        padding: 5vw;
+        padding: 1.5vw;
       }
 
       .low > ul > li:nth-child(8) {
         grid-area: 3 / 2 / 4 / 4; 
         border: 1px #004EEB solid;
-        padding: 5vw;
+        padding: 1.5vw;
         }
         
       .script{ 
         color: #004EEB;
       }
       .hi > ul > li {
-        font-size: 14pt;
+        font-size: 12pt;
         line-height: 2.8vw;
         padding-bottom: 3%;
       }
