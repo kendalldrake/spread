@@ -23,7 +23,8 @@ h1, h2, h3, h4, h5, h6 {
   background-color: white;
   padding: 5vw;
   padding-left: 20vh;
-  height: 100vh;
+  padding-right: 10vh;
+  height: 80vh;
 }
 
 .hero > h1 {
@@ -48,7 +49,8 @@ text-transform: none;
   letter-spacing: 0.5vw; 
   color: #004EEB; 
   line-height: 15px;
-  padding-left: 46%;
+  padding-left: 90%;
+  padding-right:10%;
 }
 
 /* hi-fidelity styles */
@@ -156,7 +158,7 @@ text-transform: none;
   .low > ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-gap: 2vw;
   }
   
@@ -187,25 +189,73 @@ grid-template-rows: repeat(3, 1fr);
     padding: 5vw;
 
   }
+ .script{ font-size: 2.5vw;
+  padding-top: 60%;
+  padding-right:10%;
 
-<<<<<<< HEAD
-  section {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-
-@media only screen and (max-width: 600px) {
-    .hero, .hi, .mid, .low {
-      width: 100%; /* The width is 100%, when the viewport is 600px or smaller */
-    }
-=======
- 
+ }
 @media print {
-  p {
-      font-size: 11pt;
-  }
-} 
+  body {
+        margin: 0;
+        font-size: 14pt;
+        background-color: white;
+        font-family:'Public Sans', sans-serif;
+        padding: 0.5in;
+      } 
+      .hero {
+        padding: 5vw;
+        padding-left: 20vh;
+        padding-right: 10vh;
+        height: 60vh;
+      }
+      .hero > h1 {
+        font-size: 15vw;
+      }
+      .mid {
+        font-size:14pt;
+        padding-top: 5%;
+      }
+        
+      .low {
+        background-color:white;
+        padding-top: 5%;
+      }
+      .low > ul > li {
+        font-family: 'IBM Plex Mono', monospace;
+        color: #004EEB;
+        font-size: 14pt;
+        line-height: 2.8vw;
+        border: 1px #004EEB dashed;
+        padding-bottom: 3%;     
+      } 
+      .low > ul > li:nth-child(1) {
+        grid-area: 1 / 1 / 2 / 3;
+        border: 1px #004EEB solid;
+        border-style: double;
+        padding: 5vw;}
+
+      .low > ul > li:nth-child(6) {
+        grid-area: 2 / 3 / 3 / 5;
+        border: 1px #004EEB solid;
+        padding: 5vw;
+      }
+
+      .low > ul > li:nth-child(8) {
+        grid-area: 3 / 2 / 4 / 4; 
+        border: 1px #004EEB solid;
+        padding: 5vw;
+        }
+        
+      .script{ 
+        color: #004EEB;
+      }
+      .hi > ul > li {
+        font-size: 14pt;
+        line-height: 2.8vw;
+        padding-bottom: 3%;
+      }
+
+        
 
 @media only screen and (max-width: 600px) {
   .hero {
@@ -226,6 +276,7 @@ grid-template-rows: repeat(3, 1fr);
     color: var(--low-bg); 
     line-height: 32vw;
     padding-left: 0;
+    padding-right:10vh;
   }
   
   .hero > h2 {
@@ -239,7 +290,7 @@ grid-template-rows: repeat(3, 1fr);
 .hi {
   padding: 5vw;
   background-color: var(--hifi-bg);
-  padding-top: 10vw;
+  padding-top: 5vw;
   padding-bottom: 10vw;
   
 }
@@ -266,7 +317,7 @@ grid-template-rows: repeat(3, 1fr);
   font-family: 'EB Garamond', serif;
   font-size: 18vw;
   line-height: 8vw;
-  padding-top: 5vw;
+  padding-top: vw;
   padding-right: 1vw;
   padding-left: 0vw;
 }
@@ -401,9 +452,4 @@ grid-template-rows: repeat(3, 1fr);
   .low > ul > li:nth-child(8) {
     border: 1px white solid;
     padding: 5vw;
->>>>>>> ebaae876be0d3fc9d1402e1fc49de3bcd13edc74
-
-}
-@media print {
-  /* print styles go here */
 }
