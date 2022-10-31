@@ -340,7 +340,7 @@ text-transform: none;
         line-height: 2.8vw;
         padding-bottom: 3%;
       }
-
+    }
         
 
 @media only screen and (max-width: 600px) {
@@ -568,8 +568,5 @@ text-transform: none;
   .low > ul > li:nth-child(8) {
     border: 1px white solid;
     padding: 5vw;
-
-}
-@media print {
-  /* print styles go here */
+  }
 }
